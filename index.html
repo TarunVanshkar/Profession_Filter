@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest-2</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="heading">Filter UI cards via their profession.</p>
+
+    <select name="Profession" id="professionId">
+        <option value="profession">Profession</option>
+        <option value="developer">developer</option>
+        <option value="admin">admin</option>
+    </select>
+
+    <div class="card-container" id="card-container">
+        <!--
+            Sample Card 
+            <div class="card-item">
+            <p>1.</p>
+            <p>Name: John</p>
+            <p>Profession: Developer</p>
+            <p>Age: 18</p>
+        </div> -->
+    </div>
+
+    <button class="filter-btn" id="filter-user">Filter</button>
+
+    <p class="user-heading">Add a new user</p>
+
+    <div class="user-container">
+        <div class="user-item">
+            <label for="name">Enter Name</label>
+            <input type="text" id="name">
+        </div>
+        <div class="user-item">
+            <label for="profession">Enter Profession</label>
+            <input type="text" id="profession">
+        </div>
+        <div class="user-item">
+            <label for="age">Enter Age</label>
+            <input type="text" id="age">
+        </div>
+    </div>
+
+    <button class="add-user-btn" id="add-user">Add User</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
